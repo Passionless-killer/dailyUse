@@ -1,13 +1,8 @@
-import React, { PureComponent } from 'react'
 import { Button } from 'antd';
-export default class App extends PureComponent {
- 
 
-  render() {
-   
-    return (
-      <div>
-          <Button type="primary" block>
+ReactDOM.render(
+  <>
+    <Button type="primary" block>
       Primary
     </Button>
     <Button block>Default</Button>
@@ -17,8 +12,6 @@ export default class App extends PureComponent {
     <Button type="link" block>
       Link
     </Button>
-      </div>
-    )
-  }
-
-}
+  </>,
+  mountNode,
+);
