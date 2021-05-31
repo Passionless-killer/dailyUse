@@ -1,0 +1,12 @@
+  1.
+  var name = "windowsName";
+
+    function fn() {
+        var name = 'Cherry';
+        innerFunction();
+        function innerFunction() {
+            console.log(this.name);      // windowsName
+        }
+    }
+
+    fn()
