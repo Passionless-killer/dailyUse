@@ -1,0 +1,20 @@
+1.js内置七种类型：空值（null),未定义（undefined）,布尔值（boolean）,数字（number）,字符串（string）,对象（object）,已经es6新增的符号(symbol)
+
+2.除了object之外都是基本数据类型。基本数据类型存在栈中，所占内存小，方便存取，通过值复制来传递；object放在堆中，通过引用复制来传递。
+
+3.typeof null ==='object' //true
+  typeof function a(){} ==='function'  //true
+
+4.function a(w,y){}
+   a.lenght   //2 函数对象的length是其声明的参数个数
+
+5.js的变量没有类型，值才有类型
+
+6.var a=1
+  var c
+   a //1
+   b //b is not defined
+   typeof a //'number'
+   typeof b //'undefined'  typeof 有个安全机制：阻止报错。否则使用typeof时，要先进行判断是否有这个值
+   typeof c //'undefined'
+

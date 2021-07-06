@@ -1,0 +1,18 @@
+1.所有typeof返回值为‘object'的对象都包含一个内部属性[[class]]。这个属性无法直接访问，可通过object.prototype.tostring()查看。
+    例如：object.prototype.toString.call([1,2,3])   //'[object array]'
+
+2.原生函数,即封装对象。如：String(),Number()
+
+3.拆封。可以用valueOf。
+    例如：var a=new String('abc')
+    a.valueOf() //abc
+
+4.尽量避免使用构造函数
+
+5.构造函数Array()不要求必须带new，他会自动补上。
+
+6.Array(3)  //[undefined,undefined,undefined]
+
+7.Date()得到的是new Date()的字符串形式
+
+8.symbol具有唯一性的特殊值，用它来命名不容易导致重名。声明是不需要new，否则会报错。主要用于私有或者特殊属性，可代替（_）
